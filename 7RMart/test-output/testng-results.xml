@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-23T23:23:36 IST" name="Suite" finished-at="2025-03-23T23:24:13 IST" duration-ms="37212">
+    <groups>
+      <group name="Regression">
+        <method signature="Login_test.verifyLoginWithValidCredentials()[pri:0, instance:test_script.Login_test@66ea810]" name="verifyLoginWithValidCredentials" class="test_script.Login_test"/>
+        <method signature="Logout_test.logout()[pri:0, instance:test_script.Logout_test@46d59067]" name="logout" class="test_script.Logout_test"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2025-03-23T23:23:36 IST" name="Test" finished-at="2025-03-23T23:24:13 IST" duration-ms="37212">
+      <class name="test_script.Logout_test">
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.Logout_test@46d59067]" started-at="2025-03-23T23:23:51 IST" name="initializerbrowser" finished-at="2025-03-23T23:23:53 IST" duration-ms="1751" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="logout()[pri:0, instance:test_script.Logout_test@46d59067]" started-at="2025-03-23T23:23:53 IST" name="logout" finished-at="2025-03-23T23:23:54 IST" duration-ms="1198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="quitandclose()[pri:0, instance:test_script.Logout_test@46d59067]" started-at="2025-03-23T23:23:54 IST" name="quitandclose" finished-at="2025-03-23T23:23:54 IST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+      </class> <!-- test_script.Logout_test -->
+      <class name="test_script.AdminUsers_test">
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.AdminUsers_test@1b1cfb87]" started-at="2025-03-23T23:23:36 IST" name="initializerbrowser" finished-at="2025-03-23T23:23:39 IST" duration-ms="3464" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="input_AdminUserDetails()[pri:1, instance:test_script.AdminUsers_test@1b1cfb87]" started-at="2025-03-23T23:23:39 IST" name="input_AdminUserDetails" description="input_AdminUserDetails" finished-at="2025-03-23T23:23:43 IST" duration-ms="3741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- input_AdminUserDetails -->
+        <test-method is-config="true" signature="quitandclose()[pri:0, instance:test_script.AdminUsers_test@1b1cfb87]" started-at="2025-03-23T23:23:43 IST" name="quitandclose" finished-at="2025-03-23T23:23:43 IST" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.AdminUsers_test@1b1cfb87]" started-at="2025-03-23T23:23:43 IST" name="initializerbrowser" finished-at="2025-03-23T23:23:45 IST" duration-ms="1734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="delete_AdminUserDetails()[pri:2, instance:test_script.AdminUsers_test@1b1cfb87]" started-at="2025-03-23T23:23:45 IST" name="delete_AdminUserDetails" finished-at="2025-03-23T23:23:47 IST" duration-ms="1741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_AdminUserDetails -->
+        <test-method is-config="true" signature="quitandclose()[pri:0, instance:test_script.AdminUsers_test@1b1cfb87]" started-at="2025-03-23T23:23:47 IST" name="quitandclose" finished-at="2025-03-23T23:23:47 IST" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+      </class> <!-- test_script.AdminUsers_test -->
+      <class name="test_script.ManageContacts_test">
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.ManageContacts_test@d23e042]" started-at="2025-03-23T23:23:47 IST" name="initializerbrowser" finished-at="2025-03-23T23:23:48 IST" duration-ms="1634" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="manageContact()[pri:0, instance:test_script.ManageContacts_test@d23e042]" started-at="2025-03-23T23:23:48 IST" name="manageContact" finished-at="2025-03-23T23:23:51 IST" duration-ms="2604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageContact -->
+        <test-method is-config="true" signature="quitandclose()[pri:0, instance:test_script.ManageContacts_test@d23e042]" started-at="2025-03-23T23:23:51 IST" name="quitandclose" finished-at="2025-03-23T23:23:51 IST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+      </class> <!-- test_script.ManageContacts_test -->
+      <class name="test_script.Managefooter_test">
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.Managefooter_test@14dd7b39]" started-at="2025-03-23T23:23:58 IST" name="initializerbrowser" finished-at="2025-03-23T23:24:00 IST" duration-ms="1914" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="footerText()[pri:0, instance:test_script.Managefooter_test@14dd7b39]" started-at="2025-03-23T23:24:00 IST" name="footerText" finished-at="2025-03-23T23:24:02 IST" duration-ms="2250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- footerText -->
+        <test-method is-config="true" signature="quitandclose()[pri:0, instance:test_script.Managefooter_test@14dd7b39]" started-at="2025-03-23T23:24:02 IST" name="quitandclose" finished-at="2025-03-23T23:24:03 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+      </class> <!-- test_script.Managefooter_test -->
+      <class name="test_script.ManageNews_test">
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.ManageNews_test@2d0399f4]" started-at="2025-03-23T23:23:54 IST" name="initializerbrowser" finished-at="2025-03-23T23:23:56 IST" duration-ms="1669" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="login()[pri:1, instance:test_script.ManageNews_test@2d0399f4]" started-at="2025-03-23T23:23:56 IST" name="login" finished-at="2025-03-23T23:23:58 IST" duration-ms="1959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="quitandclose()[pri:0, instance:test_script.ManageNews_test@2d0399f4]" started-at="2025-03-23T23:23:58 IST" name="quitandclose" finished-at="2025-03-23T23:23:58 IST" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+      </class> <!-- test_script.ManageNews_test -->
+      <class name="test_script.Login_test">
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.Login_test@66ea810]" started-at="2025-03-23T23:24:03 IST" name="initializerbrowser" finished-at="2025-03-23T23:24:04 IST" duration-ms="1776" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="verifyInvalidUsernameAndPassword()[pri:0, instance:test_script.Login_test@66ea810]" started-at="2025-03-23T23:24:04 IST" name="verifyInvalidUsernameAndPassword" finished-at="2025-03-23T23:24:05 IST" duration-ms="490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidUsernameAndPassword -->
+        <test-method is-config="true" signature="quitandclose()[pri:0, instance:test_script.Login_test@66ea810]" started-at="2025-03-23T23:24:05 IST" name="quitandclose" finished-at="2025-03-23T23:24:05 IST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.Login_test@66ea810]" started-at="2025-03-23T23:24:05 IST" name="initializerbrowser" finished-at="2025-03-23T23:24:07 IST" duration-ms="1649" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="verifyInvalidePasswordEntry()[pri:0, instance:test_script.Login_test@66ea810]" started-at="2025-03-23T23:24:07 IST" name="verifyInvalidePasswordEntry" finished-at="2025-03-23T23:24:07 IST" duration-ms="501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidePasswordEntry -->
+        <test-method is-config="true" signature="quitandclose()[pri:0, instance:test_script.Login_test@66ea810]" started-at="2025-03-23T23:24:07 IST" name="quitandclose" finished-at="2025-03-23T23:24:08 IST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.Login_test@66ea810]" started-at="2025-03-23T23:24:08 IST" name="initializerbrowser" finished-at="2025-03-23T23:24:09 IST" duration-ms="1858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="verifyInvalideUserNameEntry()[pri:0, instance:test_script.Login_test@66ea810]" started-at="2025-03-23T23:24:09 IST" name="verifyInvalideUserNameEntry" finished-at="2025-03-23T23:24:10 IST" duration-ms="618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalideUserNameEntry -->
+        <test-method is-config="true" signature="quitandclose()[pri:0, instance:test_script.Login_test@66ea810]" started-at="2025-03-23T23:24:10 IST" name="quitandclose" finished-at="2025-03-23T23:24:10 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.Login_test@66ea810]" started-at="2025-03-23T23:24:10 IST" name="initializerbrowser" finished-at="2025-03-23T23:24:12 IST" duration-ms="1650" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="verifyLoginWithValidCredentials()[pri:0, instance:test_script.Login_test@66ea810]" started-at="2025-03-23T23:24:12 IST" name="verifyLoginWithValidCredentials" description="verifyLoginWithValidCredentials" finished-at="2025-03-23T23:24:13 IST" duration-ms="749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="quitandclose()[pri:0, instance:test_script.Login_test@66ea810]" started-at="2025-03-23T23:24:13 IST" name="quitandclose" finished-at="2025-03-23T23:24:13 IST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+      </class> <!-- test_script.Login_test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
