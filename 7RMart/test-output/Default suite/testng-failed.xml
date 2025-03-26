@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test_script.AdminUsers_test">
+      <class name="test_script.ManageCategory_test">
         <methods>
-          <include name="input_AdminUserDetails"/>
+          <include name="enterCategoryInformation"/>
           <include name="initializerbrowser"/>
+          <include name="CategoryInformation"/>
           <include name="quitandclose"/>
         </methods>
-      </class> <!-- test_script.AdminUsers_test -->
+      </class> <!-- test_script.ManageCategory_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

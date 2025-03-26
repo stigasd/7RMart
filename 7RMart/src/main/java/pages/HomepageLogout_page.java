@@ -5,11 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Logout_page {
+public class HomepageLogout_page {
 	
 	public WebDriver driver;
 	
-	public Logout_page(WebDriver driver)
+	public HomepageLogout_page(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements( driver,this);
@@ -21,6 +21,17 @@ public class Logout_page {
 	@FindBy(xpath="//p[text()='Sign in to start your session']")private WebElement verifylogout ;
 	
 	
+	
+	@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin'])[2]")private WebElement moreinfo_button ;
+	
+	
+	public AdminUsers_page moreinfo_AdminUser() 
+	{
+		moreinfo_button.click();
+		return new AdminUsers_page(driver);
+
+		
+	}
 	public void adminButtonPress()
 	{
 		admin_button.click();

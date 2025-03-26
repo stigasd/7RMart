@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="Generate_report.Listeners"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="test_script.AdminUsers_test">
+      <class name="test_script.ManageCategory_test">
         <methods>
-          <include name="input_AdminUserDetails"/>
+          <include name="enterCategoryInformation"/>
+          <include name="initializerbrowser"/>
+          <include name="categoryInformation"/>
+          <include name="quitandclose"/>
+        </methods>
+      </class> <!-- test_script.ManageCategory_test -->
+      <class name="test_script.Managefooter_test">
+        <methods>
+          <include name="manageFooterText"/>
           <include name="initializerbrowser"/>
           <include name="quitandclose"/>
         </methods>
-      </class> <!-- test_script.AdminUsers_test -->
+      </class> <!-- test_script.Managefooter_test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

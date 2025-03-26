@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Arun\eclipse-workspace\7rmart\testng.xml</span>
+                    <span>C:\Users\Arun\git\7RMart\7RMart\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">11 methods, 3 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test_script.ManageCategory_test" class="method navigator-link" hash-for-method="categoryInformation">categoryInformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test_script.ManageCategory_test" class="method navigator-link" hash-for-method="enterCategoryInformation">enterCategoryInformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test_script.Managefooter_test" class="method navigator-link" hash-for-method="manageFooterText">manageFooterText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,32 +127,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test_script.AdminUsers_test" class="method navigator-link" hash-for-method="delete_AdminUserDetails">delete_AdminUserDetails</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="test_script.SubCategory_test" class="method navigator-link" hash-for-method="deleteSubCategoryList">deleteSubCategoryList</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test_script.Managefooter_test" class="method navigator-link" hash-for-method="footerText">footerText</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test_script.AdminUsers_test" class="method navigator-link" hash-for-method="input_AdminUserDetails">input_AdminUserDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test_script.ManageNews_test" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test_script.Logout_test" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="test_script.SubCategory_test" class="method navigator-link" hash-for-method="insertSubCategoryList">insertSubCategoryList</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test_script.ManageContacts_test" class="method navigator-link" hash-for-method="manageContact">manageContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test_script.ManageNews_test" class="method navigator-link" hash-for-method="manageNewsInput">manageNewsInput</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -163,6 +177,154 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test_script.Managefooter_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="manageFooterText">
+                  </a> <!-- manageFooterText -->
+                  <span class="method-name">manageFooterText</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //button[@type=&apos;submit&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at pages.Login_page.clickSignIn(Login_page.java:37)
+	at test_script.Managefooter_test.manageFooterText(Managefooter_test.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(manageFooterText)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test_script.ManageCategory_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="categoryInformation">
+                  </a> <!-- categoryInformation -->
+                  <span class="method-name">categoryInformation</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.119)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cfea74b639b2a4370a7bf3636da7ee06, findElement {using=xpath, value=//a[@class=&apos;btn btn-rounded btn-primary&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.119, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Arun\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65492}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65492/devtoo..., se:cdpVersion: 134.0.6998.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cfea74b639b2a4370a7bf3636da7ee06
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at pages.ManageCategory_page.clickSearchButton(ManageCategory_page.java:89)
+	at test_script.ManageCategory_test.categoryInformation(ManageCategory_test.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterCategoryInformation">
+                  </a> <!-- enterCategoryInformation -->
+                  <span class="method-name">enterCategoryInformation</span>
+                  <div class="stack-trace">org.openqa.selenium.JavascriptException: javascript error: arguments[0].click is not a function
+  (Session info: chrome=134.0.6998.119)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [54363f57554618c582f67f3718440f43, executeScript {args=[], script=arguments[0].click();}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.119, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Arun\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65472}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65472/devtoo..., se:cdpVersion: 134.0.6998.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 54363f57554618c582f67f3718440f43
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at pages.ManageCategory_page.clickSaveButton(ManageCategory_page.java:77)
+	at test_script.ManageCategory_test.enterCategoryInformation(ManageCategory_test.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test_script.SubCategory_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteSubCategoryList">
+                  </a> <!-- deleteSubCategoryList -->
+                  <span class="method-name">deleteSubCategoryList</span>
+                  <em>
+(deleting sub category list)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertSubCategoryList">
+                  </a> <!-- insertSubCategoryList -->
+                  <span class="method-name">insertSubCategoryList</span>
+                  <em>
+(adding sub category list)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test_script.ManageContacts_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="manageContact">
+                  </a> <!-- manageContact -->
+                  <span class="method-name">manageContact</span>
+                  <em>
+(manageContacts)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -174,6 +336,8 @@
                   <a name="verifyInvalidUsernameAndPassword">
                   </a> <!-- verifyInvalidUsernameAndPassword -->
                   <span class="method-name">verifyInvalidUsernameAndPassword</span>
+                  <em>
+(verifyInvalidUsernameAndPassword)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -181,6 +345,8 @@
                   <a name="verifyInvalidePasswordEntry">
                   </a> <!-- verifyInvalidePasswordEntry -->
                   <span class="method-name">verifyInvalidePasswordEntry</span>
+                  <em>
+(verifyInvalidePasswordEntry)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -188,6 +354,8 @@
                   <a name="verifyInvalideUserNameEntry">
                   </a> <!-- verifyInvalideUserNameEntry -->
                   <span class="method-name">verifyInvalideUserNameEntry</span>
+                  <em>
+(verifyInvalideUserNameEntry)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -204,83 +372,16 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">test_script.ManageContacts_test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="manageContact">
-                  </a> <!-- manageContact -->
-                  <span class="method-name">manageContact</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">test_script.ManageNews_test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test_script.Managefooter_test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="footerText">
-                  </a> <!-- footerText -->
-                  <span class="method-name">footerText</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test_script.Logout_test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="logout">
-                  </a> <!-- logout -->
-                  <span class="method-name">logout</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test_script.AdminUsers_test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="delete_AdminUserDetails">
-                  </a> <!-- delete_AdminUserDetails -->
-                  <span class="method-name">delete_AdminUserDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="input_AdminUserDetails">
-                  </a> <!-- input_AdminUserDetails -->
-                  <span class="method-name">input_AdminUserDetails</span>
+                  <a name="manageNewsInput">
+                  </a> <!-- manageNewsInput -->
+                  <span class="method-name">manageNewsInput</span>
                   <em>
-(input_AdminUserDetails)                  </em>
+(manageNewsInput)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -288,7 +389,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Arun\eclipse-workspace\7rmart\testng.xml</span>
+            <span class="header-content">C:\Users\Arun\git\7RMart\7RMart\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -301,12 +402,12 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test_script.AdminUsers_test&quot;/&gt;
       &lt;class name=&quot;test_script.ManageContacts_test&quot;/&gt;
-      &lt;class name=&quot;test_script.Logout_test&quot;/&gt;
       &lt;class name=&quot;test_script.ManageNews_test&quot;/&gt;
       &lt;class name=&quot;test_script.Managefooter_test&quot;/&gt;
       &lt;class name=&quot;test_script.Login_test&quot;/&gt;
+      &lt;class name=&quot;test_script.SubCategory_test&quot;/&gt;
+      &lt;class name=&quot;test_script.ManageCategory_test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -334,10 +435,6 @@
               <span class="test-group-name">Regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">logout</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
                 <span class="method-in-group-name">verifyLoginWithValidCredentials</span>
                 <br/>
               </div> <!-- method-in-group -->
@@ -358,52 +455,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'input_AdminUserDetails')
-data.setCell(0, 2, 'test_script.AdminUsers_test')
-data.setCell(0, 3, 3741);
+data.setCell(0, 1, 'manageContact')
+data.setCell(0, 2, 'test_script.ManageContacts_test')
+data.setCell(0, 3, 3380);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'manageContact')
-data.setCell(1, 2, 'test_script.ManageContacts_test')
-data.setCell(1, 3, 2604);
+data.setCell(1, 1, 'insertSubCategoryList')
+data.setCell(1, 2, 'test_script.SubCategory_test')
+data.setCell(1, 3, 2724);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'footerText')
-data.setCell(2, 2, 'test_script.Managefooter_test')
-data.setCell(2, 3, 2250);
+data.setCell(2, 1, 'enterCategoryInformation')
+data.setCell(2, 2, 'test_script.ManageCategory_test')
+data.setCell(2, 3, 2404);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'login')
+data.setCell(3, 1, 'manageNewsInput')
 data.setCell(3, 2, 'test_script.ManageNews_test')
-data.setCell(3, 3, 1959);
+data.setCell(3, 3, 1886);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'delete_AdminUserDetails')
-data.setCell(4, 2, 'test_script.AdminUsers_test')
-data.setCell(4, 3, 1741);
+data.setCell(4, 1, 'deleteSubCategoryList')
+data.setCell(4, 2, 'test_script.SubCategory_test')
+data.setCell(4, 3, 1569);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'logout')
-data.setCell(5, 2, 'test_script.Logout_test')
-data.setCell(5, 3, 1198);
+data.setCell(5, 1, 'categoryInformation')
+data.setCell(5, 2, 'test_script.ManageCategory_test')
+data.setCell(5, 3, 1048);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyLoginWithValidCredentials')
-data.setCell(6, 2, 'test_script.Login_test')
-data.setCell(6, 3, 749);
+data.setCell(6, 1, 'manageFooterText')
+data.setCell(6, 2, 'test_script.Managefooter_test')
+data.setCell(6, 3, 730);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyInvalideUserNameEntry')
+data.setCell(7, 1, 'verifyInvalidUsernameAndPassword')
 data.setCell(7, 2, 'test_script.Login_test')
-data.setCell(7, 3, 618);
+data.setCell(7, 3, 722);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyInvalidePasswordEntry')
+data.setCell(8, 1, 'verifyLoginWithValidCredentials')
 data.setCell(8, 2, 'test_script.Login_test')
-data.setCell(8, 3, 501);
+data.setCell(8, 3, 605);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyInvalidUsernameAndPassword')
+data.setCell(9, 1, 'verifyInvalidePasswordEntry')
 data.setCell(9, 2, 'test_script.Login_test')
-data.setCell(9, 3, 490);
+data.setCell(9, 3, 572);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyInvalideUserNameEntry')
+data.setCell(10, 2, 'test_script.Login_test')
+data.setCell(10, 3, 455);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -429,141 +530,159 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test_script.AdminUsers_test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test_script.ManageContacts_test</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializerbrowser(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">input_AdminUserDetails</span>
-                <span class="method-start">3465 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quitandclose</span>
-                <span class="method-start">7213 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initializerbrowser(chrome)</span>
-                <span class="method-start">7438 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">delete_AdminUserDetails</span>
-                <span class="method-start">9172 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quitandclose</span>
-                <span class="method-start">10915 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test_script.ManageContacts_test</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initializerbrowser(chrome)</span>
-                <span class="method-start">11156 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <span class="method-name">manageContact</span>
-                <span class="method-start">12790 ms</span>
+                <span class="method-start">2837 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitandclose</span>
-                <span class="method-start">15396 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test_script.Logout_test</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initializerbrowser(chrome)</span>
-                <span class="method-start">15581 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">logout</span>
-                <span class="method-start">17332 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quitandclose</span>
-                <span class="method-start">18532 ms</span>
+                <span class="method-start">6222 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test_script.ManageNews_test</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializerbrowser(chrome)</span>
-                <span class="method-start">18741 ms</span>
+                <span class="method-start">6225 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">login</span>
-                <span class="method-start">20411 ms</span>
+                <span class="method-name">manageNewsInput</span>
+                <span class="method-start">8721 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitandclose</span>
-                <span class="method-start">22371 ms</span>
+                <span class="method-start">10610 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test_script.Managefooter_test</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializerbrowser(chrome)</span>
-                <span class="method-start">22617 ms</span>
+                <span class="method-start">10613 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">footerText</span>
-                <span class="method-start">24531 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">manageFooterText</span>
+                <span class="method-start">13008 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitandclose</span>
-                <span class="method-start">26782 ms</span>
+                <span class="method-start">13755 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test_script.Login_test</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializerbrowser(chrome)</span>
-                <span class="method-start">27011 ms</span>
+                <span class="method-start">13760 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyInvalidUsernameAndPassword</span>
-                <span class="method-start">28787 ms</span>
+                <span class="method-start">15786 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitandclose</span>
-                <span class="method-start">29278 ms</span>
+                <span class="method-start">16510 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializerbrowser(chrome)</span>
-                <span class="method-start">29492 ms</span>
+                <span class="method-start">16513 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyInvalidePasswordEntry</span>
-                <span class="method-start">31141 ms</span>
+                <span class="method-start">18596 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitandclose</span>
-                <span class="method-start">31643 ms</span>
+                <span class="method-start">19171 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializerbrowser(chrome)</span>
-                <span class="method-start">31827 ms</span>
+                <span class="method-start">19173 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyInvalideUserNameEntry</span>
-                <span class="method-start">33685 ms</span>
+                <span class="method-start">21911 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitandclose</span>
-                <span class="method-start">34306 ms</span>
+                <span class="method-start">22368 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializerbrowser(chrome)</span>
-                <span class="method-start">34501 ms</span>
+                <span class="method-start">22375 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithValidCredentials</span>
-                <span class="method-start">36152 ms</span>
+                <span class="method-start">24471 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitandclose</span>
-                <span class="method-start">36902 ms</span>
+                <span class="method-start">25077 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_script.SubCategory_test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initializerbrowser(chrome)</span>
+                <span class="method-start">25084 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">insertSubCategoryList</span>
+                <span class="method-start">27275 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitandclose</span>
+                <span class="method-start">30002 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializerbrowser(chrome)</span>
+                <span class="method-start">30004 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteSubCategoryList</span>
+                <span class="method-start">32240 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitandclose</span>
+                <span class="method-start">33811 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_script.ManageCategory_test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initializerbrowser(chrome)</span>
+                <span class="method-start">33813 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">enterCategoryInformation</span>
+                <span class="method-start">35761 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitandclose</span>
+                <span class="method-start">38173 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializerbrowser(chrome)</span>
+                <span class="method-start">38175 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">categoryInformation</span>
+                <span class="method-start">41677 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitandclose</span>
+                <span class="method-start">42731 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

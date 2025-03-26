@@ -14,7 +14,7 @@ import utilities.Excel_utilities;
 public class ManageContacts_test extends Base 
 {   
 	
-	@Test
+	@Test(description="manageContacts")
 	public void manageContact() throws Exception
 	{
 

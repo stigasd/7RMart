@@ -5,14 +5,15 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constants;
 import pages.Login_page;
 import pages.ManageNews_page;
 import utilities.Excel_utilities;
 
 
 public class ManageNews_test extends Base{
-	@Test(priority=1)
-	public void login() throws Exception
+	@Test(priority=1,description="manageNewsInput")
+	public void manageNewsInput() throws Exception
 	{   
 		
 
@@ -36,7 +37,7 @@ public class ManageNews_test extends Base{
 		manageNews.enterNews(news);
 		manageNews.saveNews();
 	    boolean alertVerification=manageNews.isSuccessAlertMessageLoaded();
-	    Assert.assertTrue(alertVerification,"Error loading success Alert box ");
+	    Assert.assertTrue(alertVerification,Constants.MANAGENEWSINPUT);
 	    
 		
 		

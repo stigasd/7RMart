@@ -38,7 +38,7 @@ public class Base {
 	@AfterMethod(alwaysRun=true)
 	public void quitandclose()
 	{
-    	driver.quit();
+      // driver.quit();
      //	driver.close();
 	}
 

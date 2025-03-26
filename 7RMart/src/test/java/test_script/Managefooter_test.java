@@ -10,8 +10,8 @@ import utilities.Excel_utilities;
 
 public class Managefooter_test extends Base {
 
-	@Test
-	public void footerText() throws IOException 
+	@Test(description="manageFooterText")
+	public void manageFooterText() throws IOException 
 	{
 	
 		String username=Excel_utilities.getStringdata(1,0,"loginpage");

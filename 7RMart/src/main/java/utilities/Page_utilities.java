@@ -81,7 +81,13 @@ public class Page_utilities {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(150,0)",""); //scroll left to right
 	}
-	
+	public void clickUsingJavascriptExecutor(WebDriver driver)
+	{
+		JavascriptExecutor js =(JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();",driver);
+		js.executeScript("arguments[0].click();", "");
+
+	}
 
 
 }

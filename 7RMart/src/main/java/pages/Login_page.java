@@ -22,17 +22,20 @@ public class Login_page {
 	@FindBy(xpath="//p[text()='Dashboard']")private WebElement dashboard;
 	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")private WebElement alertmsg;
 	
-	public void enterUserName(String username)
+	public Login_page enterUserName(String username)
 	{
 		username_field.sendKeys(username);
+		return this;
 	}
-	public void enterPassword(String password)
+	public Login_page enterPassword(String password)
 	{
 		password_field.sendKeys(password);
+		return this;
 	}
-	public void clickSignIn()
+	public HomepageLogout_page clickSignIn()
 	{
 		signIn_button.click();
+		return new HomepageLogout_page(driver) ;
 	}
 	
 	public boolean isHomePageLoaded()

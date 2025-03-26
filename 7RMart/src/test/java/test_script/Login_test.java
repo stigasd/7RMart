@@ -9,7 +9,7 @@ import pages.Login_page;
 import utilities.Excel_utilities;
 
 public class Login_test extends Base {
-	@Test(groups= {"Regression"},retryAnalyzer=retry.Retry.class,description="verifyLoginWithValidCredentials")
+	@Test(groups= {"Regression"},description="verifyLoginWithValidCredentials")
 	public void verifyLoginWithValidCredentials() throws Exception
 	{
 		String username=Excel_utilities.getStringdata(1,0,"loginpage");
@@ -27,7 +27,7 @@ public class Login_test extends Base {
 		
 		
 	}
-	@Test
+	@Test(description="verifyInvalidePasswordEntry")
 	public void verifyInvalidePasswordEntry() throws IOException
 	{
 		String username=Excel_utilities.getStringdata(2,0,"loginpage");
@@ -43,7 +43,7 @@ public class Login_test extends Base {
 		
 		
 	}
-	@Test
+	@Test(description="verifyInvalideUserNameEntry")
 	public void verifyInvalideUserNameEntry() throws IOException
 	{
 		String username=Excel_utilities.getStringdata(3,0,"loginpage");
@@ -59,7 +59,7 @@ public class Login_test extends Base {
 		
 		
 	}
-	@Test
+	@Test(description="verifyInvalidUsernameAndPassword")
 	public void verifyInvalidUsernameAndPassword() throws IOException
 	{
 		String username=Excel_utilities.getStringdata(4,0,"loginpage");

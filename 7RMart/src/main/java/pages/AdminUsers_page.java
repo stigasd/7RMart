@@ -19,7 +19,8 @@ public class AdminUsers_page
 		PageFactory.initElements(driver,this);
 	}
 	
-	@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin'])[2]")private WebElement moreinfo_button ;
+	//@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin'])[2]")private WebElement moreinfo_button ;
+	
 	@FindBy(xpath="//a[@onclick='click_button(1)']")private WebElement new_button;
 	@FindBy(xpath="//input[@id='username']")private WebElement adminUsername_field ;
 	@FindBy(xpath="//input[@id='password']")private WebElement adminPassword_field;
@@ -30,38 +31,44 @@ public class AdminUsers_page
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")private WebElement userDeleteSuccessAlert_box ;
 
 	
-	public void moreinfo_AdminUser() 
-	{
-		moreinfo_button.click();
-
-		
-	}
-	public void newUser()
+//	public void moreinfo_AdminUser() 
+//	{
+//		moreinfo_button.click();
+//
+//		
+//	}
+	public AdminUsers_page newUser()
 	{
 		new_button.click();
+		return this;
 	}
 	
-	public void Input_AdminUserName(String admin_username)
+	public AdminUsers_page Input_AdminUserName(String admin_username)
 	{
 		adminUsername_field.sendKeys(admin_username);
+		return this;
+		
 		
 		
 	}
-	public void Input_AdminUserPassword(String admin_password)
+	public AdminUsers_page Input_AdminUserPassword(String admin_password)
 	{
 		adminPassword_field.sendKeys(admin_password);
+		return this;
 	}
 	
-	public void userDetails_dropdown()
+	public AdminUsers_page userDetails_dropdown()
 	{	
 		Page_utilities pageutilities=new Page_utilities();
 		pageutilities.selectByIndex(userTypeDropdown_field, 2);
+		return this;
 	}
 	
-	public void save_Userdetails()
+	public AdminUsers_page save_Userdetails()
 	{  
 		
 		save_button.click();
+		return this;
 	}
 	
 	public boolean isUserInput_AlertBoxLoaded()
@@ -70,10 +77,11 @@ public class AdminUsers_page
 	}
 	
 	
-	public void deleteAdminUserInformation()
+	public AdminUsers_page deleteAdminUserInformation()
 	{
 		userDetails_deleteButton.click();
 		driver.switchTo().alert().accept();
+		return this;
 	
 	}
 	public boolean isUserDelete_AlertBoxLoaded()

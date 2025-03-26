@@ -2,14 +2,15 @@ package test_script;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.Login_page;
-import pages.Logout_page;
+import pages.HomepageLogout_page;
 import utilities.Excel_utilities;
 
-public class Logout_test extends Base {
-	@Test(groups={"Regression"})
+public class HomepageLogout_test extends Base {
+	@Test(groups={"Regression"},description="logout")
 	public void logout() throws IOException
 	{
 
@@ -24,10 +25,12 @@ public class Logout_test extends Base {
 		login.clickSignIn();
 		login.isHomePageLoaded();
 		
-		Logout_page pagelogout=new Logout_page(driver);
+		HomepageLogout_page pagelogout=new HomepageLogout_page(driver);
 		pagelogout.adminButtonPress();
 		pagelogout.logoutButtonPress();
-		pagelogout.verifyLogout();
+		boolean verifylogout = pagelogout.verifyLogout();
+		Assert.assertTrue(verifylogout, "not displayed");
+		
 		
 	}
 
