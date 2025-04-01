@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.AdminUsers_page;
-import pages.HomepageLogout_page;
+import pages.Home_page;
 import pages.Login_page;
 import utilities.Excel_utilities;
 import utilities.Faker_utilities;
@@ -15,7 +15,7 @@ import utilities.Faker_utilities;
 public class AdminUsers_test extends Base {
 	
 	public AdminUsers_page adminuserpage;    //globally declare
-	public HomepageLogout_page homepagelogout;
+	public Home_page homepagelogout;
 
 	@Test(priority=1,description="input_AdminUserDetails")
 	public void input_AdminUserDetails() throws IOException {

@@ -7,16 +7,17 @@
 	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="test_script.AdminUsers_test" />  
+		<!--	<class name="test_script.AdminUsers_test" />  
+			
+			<class name="test_script.Logout_test" />  -->
+			
 			<class name="test_script.ManageContacts_test" />
-			<class name="test_script.Logout_test" />  
-			<class name="test_script.ManageNews_test" />
 			<class name="test_script.Managefooter_test" />  
 			<class name="test_script.Login_test" />  
 			<class name="test_script.SubCategory_test" />  
-			<class name="test_script.ManageCategory_test">  
+			<class name="test_script.ManageCategory_test"/>  
+			<class name="test_script.ManageNews_test" />
 			
-			</class>  
 		</classes>
 	</test> <!--
 	Test -->

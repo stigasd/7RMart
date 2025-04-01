@@ -32,10 +32,10 @@ public class Login_page {
 		password_field.sendKeys(password);
 		return this;
 	}
-	public HomepageLogout_page clickSignIn()
+	public Home_page clickSignIn()
 	{
 		signIn_button.click();
-		return new HomepageLogout_page(driver) ;
+		return new Home_page(driver) ;
 	}
 	
 	public boolean isHomePageLoaded()

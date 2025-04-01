@@ -1,4 +1,4 @@
-package Generate_report;
+package generate_report;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
@@ -85,7 +85,7 @@ public class Listeners implements ITestListener {
 	 	public void onFinish(ITestContext context) { //flush method if not called only folder will be generated not report
 	  
 	 		ITestListener.super.onFinish(context); 
-	 		extent.flush(); 
+	 		extent.flush();  
 	 	}
 	
 

@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import constant.Constants;
+import utilities.FileUpload_utilities;
+
 public class ManageCategory_page {
 	
 	public WebDriver driver;
@@ -56,7 +59,9 @@ public class ManageCategory_page {
 	
 	public void uploadFile()
 	{
-		choosefile.sendKeys("C:\\Users\\Arun\\Downloads\\mogu-guava.jpg");
+		//choosefile.sendKeys("C:\\Users\\Arun\\Downloads\\mogu-guava.jpg");
+		FileUpload_utilities fileuploadutilities=new FileUpload_utilities();
+fileuploadutilities.fileUploadUsingSendKeys(choosefile, Constants.MANAGECATEGORY_IMAGE_MANGO);
 		
 	}
 //	

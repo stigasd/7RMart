@@ -19,6 +19,7 @@ public class ManageNews_test extends Base{
 
 		String username=Excel_utilities.getStringdata(1,0,"loginpage");  //excel read
 		String password=Excel_utilities.getStringdata(1,1,"loginpage");
+		String news=Excel_utilities.getStringdata(1,0,"managenews"); 
 		Login_page loginobj=new Login_page(driver);
 		loginobj.enterUserName(username);
 		loginobj.enterPassword(password);
@@ -33,7 +34,7 @@ public class ManageNews_test extends Base{
 		manageNews.newClick();
 		//String news="Diwali sale on Myntra tonight";
 		
-		String news=Excel_utilities.getStringdata(1,0,"managenews");   //excel read
+		  //excel read
 		manageNews.enterNews(news);
 		manageNews.saveNews();
 	    boolean alertVerification=manageNews.isSuccessAlertMessageLoaded();

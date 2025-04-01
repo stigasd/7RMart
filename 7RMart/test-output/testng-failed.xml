@@ -10,18 +10,11 @@
       <class name="test_script.ManageCategory_test">
         <methods>
           <include name="enterCategoryInformation"/>
+          <include name="browserQuit"/>
           <include name="initializerbrowser"/>
           <include name="categoryInformation"/>
-          <include name="quitandclose"/>
         </methods>
       </class> <!-- test_script.ManageCategory_test -->
-      <class name="test_script.Managefooter_test">
-        <methods>
-          <include name="manageFooterText"/>
-          <include name="initializerbrowser"/>
-          <include name="quitandclose"/>
-        </methods>
-      </class> <!-- test_script.Managefooter_test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

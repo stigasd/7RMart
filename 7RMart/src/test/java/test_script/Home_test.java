@@ -6,10 +6,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.Login_page;
-import pages.HomepageLogout_page;
+import pages.Home_page;
 import utilities.Excel_utilities;
 
-public class HomepageLogout_test extends Base {
+public class Home_test extends Base {
 	@Test(groups={"Regression"},description="logout")
 	public void logout() throws IOException
 	{
@@ -25,7 +25,7 @@ public class HomepageLogout_test extends Base {
 		login.clickSignIn();
 		login.isHomePageLoaded();
 		
-		HomepageLogout_page pagelogout=new HomepageLogout_page(driver);
+		Home_page pagelogout=new Home_page(driver);
 		pagelogout.adminButtonPress();
 		pagelogout.logoutButtonPress();
 		boolean verifylogout = pagelogout.verifyLogout();
