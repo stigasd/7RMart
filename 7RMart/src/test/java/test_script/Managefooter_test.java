@@ -2,8 +2,10 @@ package test_script;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constants;
 import pages.Home_page;
 import pages.Login_page;
 import pages.Managefooter_page;
@@ -28,6 +30,7 @@ public class Managefooter_test extends Base {
 		homepage=login.clickSignIn();
 		managefooterpage=homepage.clickMoreinfo_footer().clickAction_footer().enterAddress(address).enterEmail(email).enterPhone(phone).clickAction_footer();
 	    boolean verifyAlert=managefooterpage.verifyAlert();
+	    Assert.assertTrue(verifyAlert,Constants.MANAGEFOOTERINPUT);
 		
 	
 	}

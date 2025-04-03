@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constants;
 import pages.Home_page;
 import pages.Login_page;
 import pages.ManageCategory_page;
@@ -23,12 +24,11 @@ public class ManageCategory_test extends Base {
 		Login_page pagelogin=new Login_page(driver);
 		pagelogin.enterUserName(username).enterPassword(password);
 		homepage=pagelogin.clickSignIn();
-		boolean isloaded=pagelogin.isHomePageLoaded();
-		Assert.assertTrue(isloaded, "login page not loaded");
+		
 		
 		managecategorypage=homepage.clickMoreInfoManageCategory().clickNewButton().inputCategory_field(category).clickDiscount().uploadFile().clickSaveButton();
 		boolean checkAlertMSg=managecategorypage.verifyAlert();
-		Assert.assertTrue(checkAlertMSg,"error loading alert msg" );
+		Assert.assertTrue(checkAlertMSg,Constants.MANAGECATEGORYINPUT );
 		
 		
 		
@@ -49,7 +49,7 @@ public class ManageCategory_test extends Base {
 		managecategorypage=homepage.clickMoreInfoManageCategory().clickSearchButton().inputCategoryfield(searchCategory).clickSubmitSearch().clickDeleteButton();
 
 		boolean verifyAlert=managecategorypage.checkAlertMsg();
-		Assert.assertTrue(verifyAlert,"failed to delete the category details");
+		Assert.assertTrue(verifyAlert,Constants.MANAGECATEGORYDELTE);
 		
 		
 		

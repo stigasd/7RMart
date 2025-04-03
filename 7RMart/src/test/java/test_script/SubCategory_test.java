@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constants;
 import pages.Home_page;
 import pages.Login_page;
 import pages.SubCategory_page;
@@ -30,7 +31,7 @@ public class SubCategory_test extends Base {
 		
 		subcategorypage=homepage.clickMoreInfo().clickNewButton().selectCategory().inputSubCategory_field(datainput).uploadImage().clickSaveButton();
 		boolean checkAlert=subcategorypage.verifyAlertMsg();
-		Assert.assertTrue(checkAlert,"error loading alertmsg");
+		Assert.assertTrue(checkAlert,Constants.SUBCATEGORYINPUT);
 		
 		
 		
@@ -51,7 +52,7 @@ public class SubCategory_test extends Base {
 		
 		subcategorypage=homepage.clickMoreInfo().deleteSubCategory();
 		boolean checkAlert=subcategorypage.verifyDeleteAlertMsg();
-		Assert.assertTrue(checkAlert,"Delete success msg note found");
+		Assert.assertTrue(checkAlert,Constants.SUBCATEGORYDELETE);
 		
 		
 		

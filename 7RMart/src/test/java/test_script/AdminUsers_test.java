@@ -6,6 +6,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constants;
 import pages.AdminUsers_page;
 import pages.Home_page;
 import pages.Login_page;
@@ -38,7 +39,7 @@ public class AdminUsers_test extends Base {
 		adminuserpage=homepage.moreinfo_AdminUser().newUser().input_AdminUserName(admin_username).input_AdminUserPassword(admin_password).userDetails_dropdown().save_Userdetails();
 		
 		boolean verifyalertmsg=adminuserpage.isUserInput_AlertBoxLoaded();
-		Assert.assertTrue(verifyalertmsg,"Alert msg not displayed");
+		Assert.assertTrue(verifyalertmsg,Constants.MANAGENEWSINPUT);
 
 	}
 
@@ -56,7 +57,7 @@ public class AdminUsers_test extends Base {
 		homepage=loginobject.clickSignIn();// fix this   // verify alert
 		adminuserpage=homepage.moreinfo_AdminUser().deleteAdminUserInformation();                                      
 		boolean checkAlertMsg=adminuserpage.isUserDelete_AlertBoxLoaded();
-		Assert.assertTrue(checkAlertMsg,"delete success msg not found");
+		Assert.assertTrue(checkAlertMsg,Constants.ADMINUSERDELETE);
 
 	}
 

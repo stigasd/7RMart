@@ -78,7 +78,7 @@ return this;
 	{
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();",save_button );
-		js.executeScript("arguments[0].click();", "");
+		js.executeScript("arguments[0].click();",Constants.MANAGECATEGORYINPUT);
 
 		
 		save_button.click();

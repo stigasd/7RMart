@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="10" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-02T01:30:40 IST" name="Suite" finished-at="2025-04-02T01:30:51 IST" duration-ms="10488">
+  <suite started-at="2025-04-03T11:57:22 IST" name="Suite" finished-at="2025-04-03T11:58:17 IST" duration-ms="54967">
     <groups>
+      <group name="Regression">
+        <method signature="Home_test.logout()[pri:0, instance:test_script.Home_test@d23e042]" name="logout" class="test_script.Home_test"/>
+        <method signature="Login_test.verifyLoginWithValidCredentials()[pri:0, instance:test_script.Login_test@d2de489]" name="verifyLoginWithValidCredentials" class="test_script.Login_test"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2025-04-02T01:30:40 IST" name="Test" finished-at="2025-04-02T01:30:51 IST" duration-ms="10488">
-      <class name="test_script.AdminUsers_test">
-        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.AdminUsers_test@1a4927d6]" started-at="2025-04-02T01:30:40 IST" name="initializerbrowser" finished-at="2025-04-02T01:30:43 IST" duration-ms="2860" status="PASS">
+    <test started-at="2025-04-03T11:57:22 IST" name="Test" finished-at="2025-04-03T11:58:17 IST" duration-ms="54967">
+      <class name="test_script.ManageCategory_test">
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.ManageCategory_test@12591ac8]" started-at="2025-04-03T11:58:02 IST" name="initializerbrowser" finished-at="2025-04-03T11:58:03 IST" duration-ms="1524" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,22 +22,97 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializerbrowser -->
-        <test-method signature="input_AdminUserDetails()[pri:1, instance:test_script.AdminUsers_test@1a4927d6]" started-at="2025-04-02T01:30:43 IST" name="input_AdminUserDetails" description="input_AdminUserDetails" finished-at="2025-04-02T01:30:47 IST" duration-ms="3601" status="PASS">
+        <test-method signature="enterCategoryInformation()[pri:1, instance:test_script.ManageCategory_test@12591ac8]" started-at="2025-04-03T11:58:03 IST" name="enterCategoryInformation" finished-at="2025-04-03T11:58:05 IST" duration-ms="1596" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
+            <message>
+              <![CDATA[invalid argument: File not found : C:\Users\Arun\git\7RMart\7RMart\src\test\resources\mango.jpg\src\test\resources\mango.jpg
+  (Session info: chrome=134.0.6998.178)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3bdeb4a318bd6b8e2cd1233e6b8ea19, sendKeysToElement {value=[Ljava.lang.CharSequence;@72b92ce6, id=f.3733576055F2FCAC36217025344C64F2.d.BC4675E785778E92D71A211087F660E0.e.4908}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Arun\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53153}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53153/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d3bdeb4a318bd6b8e2cd1233e6b8ea19)] -> xpath: //input[@id='main_img']]
+Session ID: d3bdeb4a318bd6b8e2cd1233e6b8ea19]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\Users\Arun\git\7RMart\7RMart\src\test\resources\mango.jpg\src\test\resources\mango.jpg
+  (Session info: chrome=134.0.6998.178)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3bdeb4a318bd6b8e2cd1233e6b8ea19, sendKeysToElement {value=[Ljava.lang.CharSequence;@72b92ce6, id=f.3733576055F2FCAC36217025344C64F2.d.BC4675E785778E92D71A211087F660E0.e.4908}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Arun\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53153}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53153/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d3bdeb4a318bd6b8e2cd1233e6b8ea19)] -> xpath: //input[@id='main_img']]
+Session ID: d3bdeb4a318bd6b8e2cd1233e6b8ea19
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+at utilities.FileUpload_utilities.fileUploadUsingSendKeys(FileUpload_utilities.java:15)
+at pages.ManageCategory_page.uploadFile(ManageCategory_page.java:62)
+at test_script.ManageCategory_test.enterCategoryInformation(ManageCategory_test.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- input_AdminUserDetails -->
-        <test-method is-config="true" signature="quitandclose(org.testng.ITestResult)[pri:0, instance:test_script.AdminUsers_test@1a4927d6]" started-at="2025-04-02T01:30:47 IST" name="quitandclose" finished-at="2025-04-02T01:30:47 IST" duration-ms="206" status="PASS">
+        </test-method> <!-- enterCategoryInformation -->
+        <test-method is-config="true" signature="quitandclose(org.testng.ITestResult)[pri:0, instance:test_script.ManageCategory_test@12591ac8]" started-at="2025-04-03T11:58:05 IST" name="quitandclose" finished-at="2025-04-03T11:58:05 IST" duration-ms="329" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=input_AdminUserDetails status=SUCCESS method=AdminUsers_test.input_AdminUserDetails()[pri:1, instance:test_script.AdminUsers_test@1a4927d6] output={null}]]]>
+                <![CDATA[[TestResult name=enterCategoryInformation status=FAILURE method=ManageCategory_test.enterCategoryInformation()[pri:1, instance:test_script.ManageCategory_test@12591ac8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitandclose -->
-        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.AdminUsers_test@1a4927d6]" started-at="2025-04-02T01:30:47 IST" name="initializerbrowser" finished-at="2025-04-02T01:30:49 IST" duration-ms="1979" status="PASS">
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.ManageCategory_test@12591ac8]" started-at="2025-04-03T11:58:05 IST" name="initializerbrowser" finished-at="2025-04-03T11:58:07 IST" duration-ms="1505" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,15 +123,143 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializerbrowser -->
-        <test-method signature="delete_AdminUserDetails()[pri:2, instance:test_script.AdminUsers_test@1a4927d6]" started-at="2025-04-02T01:30:49 IST" name="delete_AdminUserDetails" finished-at="2025-04-02T01:30:51 IST" duration-ms="1540" status="PASS">
+        <test-method signature="categoryInformation()[pri:2, instance:test_script.ManageCategory_test@12591ac8]" started-at="2025-04-03T11:58:07 IST" name="categoryInformation" finished-at="2025-04-03T11:58:13 IST" duration-ms="6121" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//i[@class='fas fa-trash-alt']"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c6b45499968d9d6e9a4bbf9f54e4965, findElement {using=xpath, value=//i[@class='fas fa-trash-alt']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Arun\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53173/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c6b45499968d9d6e9a4bbf9f54e4965]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//i[@class='fas fa-trash-alt']"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c6b45499968d9d6e9a4bbf9f54e4965, findElement {using=xpath, value=//i[@class='fas fa-trash-alt']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Arun\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53173/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c6b45499968d9d6e9a4bbf9f54e4965
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at pages.ManageCategory_page.clickDeleteButton(ManageCategory_page.java:110)
+at test_script.ManageCategory_test.categoryInformation(ManageCategory_test.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- delete_AdminUserDetails -->
-        <test-method is-config="true" signature="quitandclose(org.testng.ITestResult)[pri:0, instance:test_script.AdminUsers_test@1a4927d6]" started-at="2025-04-02T01:30:51 IST" name="quitandclose" finished-at="2025-04-02T01:30:51 IST" duration-ms="250" status="PASS">
+        </test-method> <!-- categoryInformation -->
+        <test-method is-config="true" signature="quitandclose(org.testng.ITestResult)[pri:0, instance:test_script.ManageCategory_test@12591ac8]" started-at="2025-04-03T11:58:13 IST" name="quitandclose" finished-at="2025-04-03T11:58:13 IST" duration-ms="353" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=delete_AdminUserDetails status=SUCCESS method=AdminUsers_test.delete_AdminUserDetails()[pri:2, instance:test_script.AdminUsers_test@1a4927d6] output={null}]]]>
+                <![CDATA[[TestResult name=categoryInformation status=FAILURE method=ManageCategory_test.categoryInformation()[pri:2, instance:test_script.ManageCategory_test@12591ac8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+      </class> <!-- test_script.ManageCategory_test -->
+      <class name="test_script.AdminUsers_test">
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.AdminUsers_test@f68f0dc]" started-at="2025-04-03T11:57:39 IST" name="initializerbrowser" finished-at="2025-04-03T11:57:40 IST" duration-ms="1427" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="input_AdminUserDetails()[pri:1, instance:test_script.AdminUsers_test@f68f0dc]" started-at="2025-04-03T11:57:40 IST" name="input_AdminUserDetails" description="input_AdminUserDetails" finished-at="2025-04-03T11:57:42 IST" duration-ms="2086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- input_AdminUserDetails -->
+        <test-method is-config="true" signature="quitandclose(org.testng.ITestResult)[pri:0, instance:test_script.AdminUsers_test@f68f0dc]" started-at="2025-04-03T11:57:42 IST" name="quitandclose" finished-at="2025-04-03T11:57:42 IST" duration-ms="190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=input_AdminUserDetails status=SUCCESS method=AdminUsers_test.input_AdminUserDetails()[pri:1, instance:test_script.AdminUsers_test@f68f0dc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.AdminUsers_test@f68f0dc]" started-at="2025-04-03T11:57:42 IST" name="initializerbrowser" finished-at="2025-04-03T11:57:44 IST" duration-ms="1570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="delete_AdminUserDetails()[pri:2, instance:test_script.AdminUsers_test@f68f0dc]" started-at="2025-04-03T11:57:44 IST" name="delete_AdminUserDetails" finished-at="2025-04-03T11:57:45 IST" duration-ms="1527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_AdminUserDetails -->
+        <test-method is-config="true" signature="quitandclose(org.testng.ITestResult)[pri:0, instance:test_script.AdminUsers_test@f68f0dc]" started-at="2025-04-03T11:57:45 IST" name="quitandclose" finished-at="2025-04-03T11:57:45 IST" duration-ms="158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=delete_AdminUserDetails status=SUCCESS method=AdminUsers_test.delete_AdminUserDetails()[pri:2, instance:test_script.AdminUsers_test@f68f0dc] output={null}]]]>
               </value>
             </param>
           </params>
@@ -60,6 +267,390 @@
           </reporter-output>
         </test-method> <!-- quitandclose -->
       </class> <!-- test_script.AdminUsers_test -->
+      <class name="test_script.SubCategory_test">
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.SubCategory_test@14bdbc74]" started-at="2025-04-03T11:57:54 IST" name="initializerbrowser" finished-at="2025-04-03T11:57:56 IST" duration-ms="1629" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="insertSubCategoryList()[pri:1, instance:test_script.SubCategory_test@14bdbc74]" started-at="2025-04-03T11:57:56 IST" name="insertSubCategoryList" description="adding sub category list" finished-at="2025-04-03T11:57:58 IST" duration-ms="1995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertSubCategoryList -->
+        <test-method is-config="true" signature="quitandclose(org.testng.ITestResult)[pri:0, instance:test_script.SubCategory_test@14bdbc74]" started-at="2025-04-03T11:57:58 IST" name="quitandclose" finished-at="2025-04-03T11:57:58 IST" duration-ms="183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=insertSubCategoryList status=SUCCESS method=SubCategory_test.insertSubCategoryList()[pri:1, instance:test_script.SubCategory_test@14bdbc74] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.SubCategory_test@14bdbc74]" started-at="2025-04-03T11:57:58 IST" name="initializerbrowser" finished-at="2025-04-03T11:58:00 IST" duration-ms="2502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="deleteSubCategoryList()[pri:2, instance:test_script.SubCategory_test@14bdbc74]" started-at="2025-04-03T11:58:00 IST" name="deleteSubCategoryList" description="deleting sub category list" finished-at="2025-04-03T11:58:02 IST" duration-ms="1290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSubCategoryList -->
+        <test-method is-config="true" signature="quitandclose(org.testng.ITestResult)[pri:0, instance:test_script.SubCategory_test@14bdbc74]" started-at="2025-04-03T11:58:02 IST" name="quitandclose" finished-at="2025-04-03T11:58:02 IST" duration-ms="153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteSubCategoryList status=SUCCESS method=SubCategory_test.deleteSubCategoryList()[pri:2, instance:test_script.SubCategory_test@14bdbc74] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+      </class> <!-- test_script.SubCategory_test -->
+      <class name="test_script.ManageContacts_test">
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.ManageContacts_test@46d59067]" started-at="2025-04-03T11:57:35 IST" name="initializerbrowser" finished-at="2025-04-03T11:57:36 IST" duration-ms="1724" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="manageContact()[pri:0, instance:test_script.ManageContacts_test@46d59067]" started-at="2025-04-03T11:57:36 IST" name="manageContact" description="manage contacts" finished-at="2025-04-03T11:57:38 IST" duration-ms="1914" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "pages.ManageContacts_page.manageContactsUpdateButton()" because the return value of "pages.ManageContacts_page.enterDeliveryCharge(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "pages.ManageContacts_page.manageContactsUpdateButton()" because the return value of "pages.ManageContacts_page.enterDeliveryCharge(String)" is null
+at test_script.ManageContacts_test.manageContact(ManageContacts_test.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageContact -->
+        <test-method is-config="true" signature="quitandclose(org.testng.ITestResult)[pri:0, instance:test_script.ManageContacts_test@46d59067]" started-at="2025-04-03T11:57:38 IST" name="quitandclose" finished-at="2025-04-03T11:57:39 IST" duration-ms="355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageContact status=FAILURE method=ManageContacts_test.manageContact()[pri:0, instance:test_script.ManageContacts_test@46d59067] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+      </class> <!-- test_script.ManageContacts_test -->
+      <class name="test_script.Home_test">
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.Home_test@d23e042]" started-at="2025-04-03T11:57:32 IST" name="initializerbrowser" finished-at="2025-04-03T11:57:33 IST" duration-ms="1919" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="logout()[pri:0, instance:test_script.Home_test@d23e042]" started-at="2025-04-03T11:57:33 IST" name="logout" description="logout" finished-at="2025-04-03T11:57:34 IST" duration-ms="917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="quitandclose(org.testng.ITestResult)[pri:0, instance:test_script.Home_test@d23e042]" started-at="2025-04-03T11:57:34 IST" name="quitandclose" finished-at="2025-04-03T11:57:35 IST" duration-ms="160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logout status=SUCCESS method=Home_test.logout()[pri:0, instance:test_script.Home_test@d23e042] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+      </class> <!-- test_script.Home_test -->
+      <class name="test_script.Managefooter_test">
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.Managefooter_test@34bde49d]" started-at="2025-04-03T11:57:22 IST" name="initializerbrowser" finished-at="2025-04-03T11:57:24 IST" duration-ms="2472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="manageFooterText()[pri:0, instance:test_script.Managefooter_test@34bde49d]" started-at="2025-04-03T11:57:24 IST" name="manageFooterText" description="manageFooterText" finished-at="2025-04-03T11:57:31 IST" duration-ms="6700" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//i[@class='fas fa-edit'])[1]"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d7f39d2a974d9b262d072ee721c72b4, findElement {using=xpath, value=(//i[@class='fas fa-edit'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Arun\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52924}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52924/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d7f39d2a974d9b262d072ee721c72b4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//i[@class='fas fa-edit'])[1]"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d7f39d2a974d9b262d072ee721c72b4, findElement {using=xpath, value=(//i[@class='fas fa-edit'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Arun\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52924}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52924/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d7f39d2a974d9b262d072ee721c72b4
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at pages.Managefooter_page.clickAction_footer(Managefooter_page.java:33)
+at test_script.Managefooter_test.manageFooterText(Managefooter_test.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageFooterText -->
+        <test-method is-config="true" signature="quitandclose(org.testng.ITestResult)[pri:0, instance:test_script.Managefooter_test@34bde49d]" started-at="2025-04-03T11:57:31 IST" name="quitandclose" finished-at="2025-04-03T11:57:32 IST" duration-ms="353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageFooterText status=FAILURE method=Managefooter_test.manageFooterText()[pri:0, instance:test_script.Managefooter_test@34bde49d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+      </class> <!-- test_script.Managefooter_test -->
+      <class name="test_script.ManageNews_test">
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.ManageNews_test@5a7fe64f]" started-at="2025-04-03T11:58:13 IST" name="initializerbrowser" finished-at="2025-04-03T11:58:15 IST" duration-ms="2224" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="manageNewsInput()[pri:1, instance:test_script.ManageNews_test@5a7fe64f]" started-at="2025-04-03T11:58:15 IST" name="manageNewsInput" description="manageNewsInput" finished-at="2025-04-03T11:58:17 IST" duration-ms="1316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageNewsInput -->
+        <test-method is-config="true" signature="quitandclose(org.testng.ITestResult)[pri:0, instance:test_script.ManageNews_test@5a7fe64f]" started-at="2025-04-03T11:58:17 IST" name="quitandclose" finished-at="2025-04-03T11:58:17 IST" duration-ms="176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageNewsInput status=SUCCESS method=ManageNews_test.manageNewsInput()[pri:1, instance:test_script.ManageNews_test@5a7fe64f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+      </class> <!-- test_script.ManageNews_test -->
+      <class name="test_script.Login_test">
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.Login_test@d2de489]" started-at="2025-04-03T11:57:45 IST" name="initializerbrowser" finished-at="2025-04-03T11:57:47 IST" duration-ms="1569" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="verifyInvalidUsernameAndPassword()[pri:0, instance:test_script.Login_test@d2de489]" started-at="2025-04-03T11:57:47 IST" name="verifyInvalidUsernameAndPassword" description="verifyInvalidUsernameAndPassword" finished-at="2025-04-03T11:57:47 IST" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidUsernameAndPassword -->
+        <test-method is-config="true" signature="quitandclose(org.testng.ITestResult)[pri:0, instance:test_script.Login_test@d2de489]" started-at="2025-04-03T11:57:47 IST" name="quitandclose" finished-at="2025-04-03T11:57:48 IST" duration-ms="153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidUsernameAndPassword status=SUCCESS method=Login_test.verifyInvalidUsernameAndPassword()[pri:0, instance:test_script.Login_test@d2de489] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.Login_test@d2de489]" started-at="2025-04-03T11:57:48 IST" name="initializerbrowser" finished-at="2025-04-03T11:57:49 IST" duration-ms="1490" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="verifyInvalidePasswordEntry()[pri:0, instance:test_script.Login_test@d2de489]" started-at="2025-04-03T11:57:49 IST" name="verifyInvalidePasswordEntry" description="verifyInvalidePasswordEntry" finished-at="2025-04-03T11:57:50 IST" duration-ms="422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidePasswordEntry -->
+        <test-method is-config="true" signature="quitandclose(org.testng.ITestResult)[pri:0, instance:test_script.Login_test@d2de489]" started-at="2025-04-03T11:57:50 IST" name="quitandclose" finished-at="2025-04-03T11:57:50 IST" duration-ms="141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidePasswordEntry status=SUCCESS method=Login_test.verifyInvalidePasswordEntry()[pri:0, instance:test_script.Login_test@d2de489] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.Login_test@d2de489]" started-at="2025-04-03T11:57:50 IST" name="initializerbrowser" finished-at="2025-04-03T11:57:51 IST" duration-ms="1457" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="verifyInvalideUserNameEntry()[pri:0, instance:test_script.Login_test@d2de489]" started-at="2025-04-03T11:57:51 IST" name="verifyInvalideUserNameEntry" description="verifyInvalideUserNameEntry" finished-at="2025-04-03T11:57:52 IST" duration-ms="462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalideUserNameEntry -->
+        <test-method is-config="true" signature="quitandclose(org.testng.ITestResult)[pri:0, instance:test_script.Login_test@d2de489]" started-at="2025-04-03T11:57:52 IST" name="quitandclose" finished-at="2025-04-03T11:57:52 IST" duration-ms="132" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalideUserNameEntry status=SUCCESS method=Login_test.verifyInvalideUserNameEntry()[pri:0, instance:test_script.Login_test@d2de489] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+        <test-method is-config="true" signature="initializerbrowser(java.lang.String)[pri:0, instance:test_script.Login_test@d2de489]" started-at="2025-04-03T11:57:52 IST" name="initializerbrowser" finished-at="2025-04-03T11:57:53 IST" duration-ms="1476" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializerbrowser -->
+        <test-method signature="verifyLoginWithValidCredentials()[pri:0, instance:test_script.Login_test@d2de489]" started-at="2025-04-03T11:57:53 IST" name="verifyLoginWithValidCredentials" description="verifyLoginWithValidCredentials" finished-at="2025-04-03T11:57:54 IST" duration-ms="630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="quitandclose(org.testng.ITestResult)[pri:0, instance:test_script.Login_test@d2de489]" started-at="2025-04-03T11:57:54 IST" name="quitandclose" finished-at="2025-04-03T11:57:54 IST" duration-ms="183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithValidCredentials status=SUCCESS method=Login_test.verifyLoginWithValidCredentials()[pri:0, instance:test_script.Login_test@d2de489] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitandclose -->
+      </class> <!-- test_script.Login_test -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

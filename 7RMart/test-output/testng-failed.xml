@@ -7,13 +7,28 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test_script.AdminUsers_test">
+      <class name="test_script.ManageContacts_test">
         <methods>
           <include name="initializerbrowser"/>
-          <include name="delete_AdminUserDetails"/>
+          <include name="quitandclose"/>
+          <include name="manageContact"/>
+        </methods>
+      </class> <!-- test_script.ManageContacts_test -->
+      <class name="test_script.ManageCategory_test">
+        <methods>
+          <include name="enterCategoryInformation"/>
+          <include name="initializerbrowser"/>
+          <include name="categoryInformation"/>
           <include name="quitandclose"/>
         </methods>
-      </class> <!-- test_script.AdminUsers_test -->
+      </class> <!-- test_script.ManageCategory_test -->
+      <class name="test_script.Managefooter_test">
+        <methods>
+          <include name="manageFooterText"/>
+          <include name="initializerbrowser"/>
+          <include name="quitandclose"/>
+        </methods>
+      </class> <!-- test_script.Managefooter_test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

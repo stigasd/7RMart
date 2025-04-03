@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constants;
 import pages.Home_page;
 import pages.Login_page;
 import pages.ManageContacts_page;
@@ -35,7 +36,7 @@ public class ManageContacts_test extends Base
 		managecontactspage=homepage.moreinfoManageContact().clickActionButton().enterPhoneNumber(phone).enterEmail(email).enteraddress(address).enterDeliveryTime(deliveryTime).enterDeliveryCharge(deliveryCharge).manageContactsUpdateButton();
 
 		boolean verifyAlert=managecontactspage.isAlertLoaded();
-		Assert.assertTrue(verifyAlert, "error update contacts");
+		Assert.assertTrue(verifyAlert,Constants.MANAGECONTACTSINPUT);
 		
 		
 		

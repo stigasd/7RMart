@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constants;
 import pages.Login_page;
 import utilities.Excel_utilities;
 
@@ -22,7 +23,7 @@ public class Login_test extends Base {
 		pagelogin.clickSignIn();
 		pagelogin.isHomePageLoaded();
 		boolean isloaded=pagelogin.isHomePageLoaded();
-		Assert.assertTrue(isloaded, "home page not login with valid credentials");
+		Assert.assertTrue(isloaded, Constants.LOGINVALIDCREDENTIALS);
 		
 		
 		
