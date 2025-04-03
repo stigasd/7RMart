@@ -19,7 +19,7 @@ public class ManageCategory_page {
 		PageFactory.initElements( driver,this);
 	}
 	
-	@FindBy(xpath="(//a[@class='small-box-footer'])[11]")private WebElement moreinfoManageCategory;
+	
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")private WebElement new_button;
 	@FindBy(xpath="//input[@class='form-control']")private WebElement inputCategory_field;
 	@FindBy(xpath="(//span[text()='discount'])[1]")private WebElement discount_button;
@@ -37,31 +37,30 @@ public class ManageCategory_page {
 	
 	
 	
-	
-	public void clickMoreInfoManageCategory()
-	{
-		moreinfoManageCategory.click();
-	}
-	
-	public void clickNewButton() 
+
+	public ManageCategory_page clickNewButton() 
 	{
 		new_button.click();
+		return this;
 	}
-	public void inputCategory_field(String category) 
+	public ManageCategory_page inputCategory_field(String category) 
 	{
 		inputCategory_field.sendKeys(category);
+		return this;
 	}
 	
-	public void clickDiscount()
+	public ManageCategory_page clickDiscount()
 	{
 		discount_button.click();
+		return this;
 	}
 	
-	public void uploadFile()
+	public ManageCategory_page uploadFile()
 	{
 		//choosefile.sendKeys("C:\\Users\\Arun\\Downloads\\mogu-guava.jpg");
 		FileUpload_utilities fileuploadutilities=new FileUpload_utilities();
 fileuploadutilities.fileUploadUsingSendKeys(choosefile, Constants.MANAGECATEGORY_IMAGE_MANGO);
+return this;
 		
 	}
 //	
@@ -75,7 +74,7 @@ fileuploadutilities.fileUploadUsingSendKeys(choosefile, Constants.MANAGECATEGORY
 //	}
 	
 	
-	public void clickSaveButton()
+	public ManageCategory_page clickSaveButton()
 	{
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();",save_button );
@@ -83,29 +82,34 @@ fileuploadutilities.fileUploadUsingSendKeys(choosefile, Constants.MANAGECATEGORY
 
 		
 		save_button.click();
+		return this;
 	}
 	public boolean verifyAlert()
 	{
 		return alertmsg.isDisplayed();
 	}
 	
-	public void clickSearchButton()
+	public ManageCategory_page clickSearchButton()
 	{
 		search_button.click();
+		return this;
 	}
-	public void inputCategoryfield(String searchCategory)
+	public ManageCategory_page inputCategoryfield(String searchCategory)
 	{
 		categorySearch_field.sendKeys(searchCategory);
+		return this;
 	}
-	public void clickSubmitSearch()
+	public ManageCategory_page clickSubmitSearch()
 	{
 		submitSearch_button.click();
+		return this;
 	}
 
-	public void clickDeleteButton()
+	public ManageCategory_page clickDeleteButton()
 	{
 		delete_button.click();
 		driver.switchTo().alert().accept();
+		return this;
 	}
 	
 	public boolean checkAlertMsg() 

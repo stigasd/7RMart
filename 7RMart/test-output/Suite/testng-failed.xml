@@ -3,18 +3,17 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
   <listeners>
-    <listener class-name="Generate_report.Listeners"/>
+    <listener class-name="generate_report.Listeners"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test_script.ManageCategory_test">
+      <class name="test_script.AdminUsers_test">
         <methods>
-          <include name="enterCategoryInformation"/>
-          <include name="browserQuit"/>
           <include name="initializerbrowser"/>
-          <include name="categoryInformation"/>
+          <include name="delete_AdminUserDetails"/>
+          <include name="quitandclose"/>
         </methods>
-      </class> <!-- test_script.ManageCategory_test -->
+      </class> <!-- test_script.AdminUsers_test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

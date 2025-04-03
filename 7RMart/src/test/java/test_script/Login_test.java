@@ -22,7 +22,7 @@ public class Login_test extends Base {
 		pagelogin.clickSignIn();
 		pagelogin.isHomePageLoaded();
 		boolean isloaded=pagelogin.isHomePageLoaded();
-		Assert.assertTrue(isloaded, "home page not login with correct credentials");
+		Assert.assertTrue(isloaded, "home page not login with valid credentials");
 		
 		
 		
@@ -38,7 +38,7 @@ public class Login_test extends Base {
 		pagelogin.enterPassword(password);
 		pagelogin.clickSignIn();
 		boolean checkAlert=pagelogin.checkAlertMsg();
-		Assert.assertTrue(checkAlert,"Green Alert not displayed ");
+		Assert.assertTrue(checkAlert,"Homepage is loaded with incorrect password");
 		
 		
 		
@@ -54,7 +54,7 @@ public class Login_test extends Base {
 		pagelogin.enterPassword(password);
 		pagelogin.clickSignIn();
 		boolean checkAlert=pagelogin.checkAlertMsg();
-		Assert.assertTrue(checkAlert,"Green Alert not displayed");
+		Assert.assertTrue(checkAlert,"Homepage is loaded with incorrect username");
 		
 		
 		
@@ -69,7 +69,7 @@ public class Login_test extends Base {
 		pagelogin.enterPassword(password);
 		pagelogin.clickSignIn();
 		boolean checkAlert=pagelogin.checkAlertMsg();
-		Assert.assertTrue(checkAlert,"Green alert not displayed");
+		Assert.assertTrue(checkAlert,"Homepage loaded with incorrect username and password");
 		
 	}
 

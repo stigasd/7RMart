@@ -51,16 +51,16 @@ public class Base {
 
 	@AfterMethod(alwaysRun = true)
 
-	 public void browserQuit(ITestResult iTestResult) throws IOException { 
+	 public void quitandclose(ITestResult iTestResult) throws IOException { 
 		if (iTestResult.getStatus() == ITestResult.FAILURE) { 
 			Screenshot_utilities scrShot = new Screenshot_utilities(); 
 			scrShot.getScreenShot(driver, iTestResult.getName()); 
 		} 
- 
-	}
-	public void quitandclose() {
 		driver.quit();
+	}
+	
+		
 		// driver.close();
 	}
 
-}
+

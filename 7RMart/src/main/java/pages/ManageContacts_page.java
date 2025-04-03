@@ -18,7 +18,7 @@ public class ManageContacts_page {
 		
 	}
 	
-	@FindBy(xpath="(//a[text()='More info '])[5]")private WebElement moreInfo;
+	
 	@FindBy(xpath="//a[@role='button']")private WebElement action_button;
 	
 	@FindBy(xpath="//input[@id='phone']")private WebElement phone_field;
@@ -32,47 +32,54 @@ public class ManageContacts_page {
 	
 	
 	
-	
-	
-	public void loginButton()
+	public ManageContacts_page clickActionButton()
 	{
-		moreInfo.click();
 		action_button.click();
+		return this;
 	}
 	
-	public void enterPhoneNumber(String phone)
+	
+	public ManageContacts_page enterPhoneNumber(String phone)
 	{
 		phone_field.clear();
 		phone_field.sendKeys(phone);
+		return this;
 		
 	}
 	
 
-	public void enterEmail(String email)
+	public ManageContacts_page enterEmail(String email)
 	{
 	email_field.clear();
 	email_field.sendKeys(email);
+	return this;
 	}
 		
-	public void enteraddress(String address)
+	public ManageContacts_page enteraddress(String address)
 	{
 	address_field.clear();
 	address_field.sendKeys(address);
+	return this;
 		
 	}
-	public void enterDeliveryTime(String deliveryTime)
+	public ManageContacts_page enterDeliveryTime(String deliveryTime)
 	{
 	deliveryTime_field.clear();
 	deliveryTime_field.sendKeys(deliveryTime);
+	return this;
 	}
-	public void enterDeliveryCharge(String deliveryCharge)
+	public ManageContacts_page enterDeliveryCharge(String deliveryCharge)
 	{
 	deliveryCharge_field.sendKeys(deliveryCharge);
 	update_button.click();
+	return null;
 	}	
-	public void pressUpdate()
+	public ManageContacts_page manageContactsUpdateButton()
+	
 	{
 		update_button.click();
+		return this;
+		
 	}
 	
 	public boolean isAlertLoaded()

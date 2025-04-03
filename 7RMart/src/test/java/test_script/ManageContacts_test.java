@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import pages.Home_page;
 import pages.Login_page;
 import pages.ManageContacts_page;
 import utilities.Excel_utilities;
@@ -13,8 +14,9 @@ import utilities.Excel_utilities;
 
 public class ManageContacts_test extends Base 
 {   
-	
-	@Test(description="manageContacts")
+	public Home_page homepage;
+	public ManageContacts_page managecontactspage;
+	@Test(description="manage contacts")
 	public void manageContact() throws Exception
 	{
 
@@ -28,23 +30,11 @@ public class ManageContacts_test extends Base
 		String deliveryCharge= Excel_utilities.getIntegerdata(2,4,"managecontact");
 		
 		Login_page login=new Login_page(driver);
-		login.enterUserName(username);
-		login.enterPassword(password);
-		login.clickSignIn();
-		login.isHomePageLoaded();
-		
-		
-		ManageContacts_page manageContact=new ManageContacts_page(driver);
-		
-		manageContact.loginButton();
-		manageContact.enterPhoneNumber(phone);
-		manageContact.enterEmail(email);
-		manageContact.enteraddress(address);
-		manageContact.enterDeliveryTime(deliveryTime);
-		manageContact.enterDeliveryCharge(deliveryCharge);
-		
-	
-		boolean verifyAlert=manageContact.isAlertLoaded();
+		login.enterUserName(username).enterPassword(password);
+		homepage=login.clickSignIn();
+		managecontactspage=homepage.moreinfoManageContact().clickActionButton().enterPhoneNumber(phone).enterEmail(email).enteraddress(address).enterDeliveryTime(deliveryTime).enterDeliveryCharge(deliveryCharge).manageContactsUpdateButton();
+
+		boolean verifyAlert=managecontactspage.isAlertLoaded();
 		Assert.assertTrue(verifyAlert, "error update contacts");
 		
 		

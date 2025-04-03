@@ -9,7 +9,7 @@
   </run>
   </groups>
     <classes>
-      <class name="test_script.Logout_test"/>
+      <class name="test_script.Home_test"/>
       <class name="test_script.Login_test"></class>
     </classes>
   </test> <!-- Test -->

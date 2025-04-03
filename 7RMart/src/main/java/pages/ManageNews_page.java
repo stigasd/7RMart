@@ -17,7 +17,7 @@ public class ManageNews_page {
 	}
 
 	@FindBy(xpath="//p[text()='Manage News']//parent::a")private WebElement manageNews_box;
-	@FindBy(xpath="(//i[@class='fas fa-arrow-circle-right'])[9]")private WebElement moreinfo_button;
+	
 	@FindBy(xpath="//a[@onclick='click_button(1)']")private WebElement newClick_button;
 	@FindBy(xpath="//textarea[@id='news']")private WebElement newsInput_field;
 	@FindBy(xpath="//button[@type='submit']")private WebElement save_button;
@@ -27,22 +27,22 @@ public class ManageNews_page {
 	
 
 	
-	public void moreInfo()
+	
+	public ManageNews_page newClick()
 	{
-		moreinfo_button.click();
+		newClick_button.click();
+		return this;	
 	}
-	public void newClick()
-	{
-		newClick_button.click();	
-	}
-	public void enterNews(String news)
+	public ManageNews_page enterNews(String news)
 	{
 		newsInput_field.sendKeys(news);
+		return this;
 		
 	}
-	public void saveNews()
+	public ManageNews_page saveNews()
 	{
 		save_button.click();
+		return this;
 	}
 	public boolean isSuccessAlertMessageLoaded()
 	{

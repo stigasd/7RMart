@@ -17,7 +17,7 @@ public class SubCategory_page {
 		PageFactory.initElements(driver,this);
 	}
 	
-	@FindBy(xpath="(//a[@class='small-box-footer'])[4]")private WebElement moreinfo_SubCategory ;
+	
 	@FindBy(xpath="//a[@onclick='click_button(1)']")private WebElement new_button ;
 	@FindBy(xpath="//select[@id='cat_id']")private WebElement category_dropdown;
 	@FindBy(xpath="//input[@id='subcategory']")private WebElement subCategory_field ;
@@ -28,33 +28,34 @@ public class SubCategory_page {
 	@FindBy(xpath="(//i[@class='fas fa-trash-alt'])[1]")private WebElement delete_button;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")private WebElement deleteAlertMsg;
 	
-	public void clickMoreInfo()
-	{
-		moreinfo_SubCategory.click();
-	}
 	
-	public void clickNewButton() 
+	public SubCategory_page clickNewButton() 
 	{
 		new_button.click();
+		return this;
 	}
-	public void selectCategory()
+	public SubCategory_page selectCategory()
 	{
 		Page_utilities pageutilities=new Page_utilities();
 		pageutilities.selectByIndex(category_dropdown,3);
+		return this;
 	}
 	
-	public void inputSubCategory_field(String datainput)
+	public SubCategory_page inputSubCategory_field(String datainput)
 	{
 		subCategory_field.sendKeys(datainput);
+		return this;
 	}
-	public void uploadImage()
+	public SubCategory_page uploadImage()
 	{
 		uploadImage_button.sendKeys("C:\\Users\\Arun\\Downloads\\mango.jpg");
+		return this;
 	}
 	
-	public void clickSaveButton()
+	public SubCategory_page clickSaveButton()
 	{
 		save_button.click();
+		return this;
 	}
 	
 	public boolean verifyAlertMsg()
@@ -63,10 +64,11 @@ public class SubCategory_page {
 		
 	}
 	
-	public void deleteSubCategory()
+	public SubCategory_page deleteSubCategory()
 	{
 		delete_button.click();
 		driver.switchTo().alert().accept();
+		return this;
 	}
 	public boolean verifyDeleteAlertMsg()
 	{

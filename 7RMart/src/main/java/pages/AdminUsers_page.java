@@ -43,7 +43,7 @@ public class AdminUsers_page
 		return this;
 	}
 	
-	public AdminUsers_page Input_AdminUserName(String admin_username)
+	public AdminUsers_page input_AdminUserName(String admin_username)
 	{
 		adminUsername_field.sendKeys(admin_username);
 		return this;
@@ -51,7 +51,7 @@ public class AdminUsers_page
 		
 		
 	}
-	public AdminUsers_page Input_AdminUserPassword(String admin_password)
+	public AdminUsers_page input_AdminUserPassword(String admin_password)
 	{
 		adminPassword_field.sendKeys(admin_password);
 		return this;

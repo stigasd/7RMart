@@ -6,12 +6,15 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import constant.Constants;
+import pages.Home_page;
 import pages.Login_page;
 import pages.ManageNews_page;
 import utilities.Excel_utilities;
 
 
 public class ManageNews_test extends Base{
+	public Home_page homepage;
+	public ManageNews_page managenewspage;
 	@Test(priority=1,description="manageNewsInput")
 	public void manageNewsInput() throws Exception
 	{   
@@ -21,23 +24,12 @@ public class ManageNews_test extends Base{
 		String password=Excel_utilities.getStringdata(1,1,"loginpage");
 		String news=Excel_utilities.getStringdata(1,0,"managenews"); 
 		Login_page loginobj=new Login_page(driver);
-		loginobj.enterUserName(username);
-		loginobj.enterPassword(password);
-		loginobj.clickSignIn();
-		loginobj.isHomePageLoaded();
+		loginobj.enterUserName(username).enterPassword(password);
+		homepage=loginobj.clickSignIn();
 		
 		
-		//creating object of other page class
-		
-		ManageNews_page manageNews=new ManageNews_page(driver);
-		manageNews.moreInfo();
-		manageNews.newClick();
-		//String news="Diwali sale on Myntra tonight";
-		
-		  //excel read
-		manageNews.enterNews(news);
-		manageNews.saveNews();
-	    boolean alertVerification=manageNews.isSuccessAlertMessageLoaded();
+		managenewspage=homepage.moreInfo().newClick().enterNews(news).saveNews();
+	    boolean alertVerification=managenewspage.isSuccessAlertMessageLoaded();
 	    Assert.assertTrue(alertVerification,Constants.MANAGENEWSINPUT);
 	    
 		

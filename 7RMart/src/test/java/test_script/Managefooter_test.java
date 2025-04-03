@@ -4,11 +4,14 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
+import pages.Home_page;
 import pages.Login_page;
 import pages.Managefooter_page;
 import utilities.Excel_utilities;
 
 public class Managefooter_test extends Base {
+	public Managefooter_page managefooterpage;
+	public Home_page homepage;
 
 	@Test(description="manageFooterText")
 	public void manageFooterText() throws IOException 
@@ -21,20 +24,10 @@ public class Managefooter_test extends Base {
 		String phone=Excel_utilities.getIntegerdata(1,2,"managefooter");
 
 		Login_page login=new Login_page(driver);
-		login.enterUserName(username);
-		login.enterPassword(password);
-		login.clickSignIn();
-		login.isHomePageLoaded();
-		
-		
-		Managefooter_page managefooter=new Managefooter_page(driver);
-		managefooter.clickMoreinfo_footer();
-		managefooter.clickAction_footer();
-		managefooter.enterAddress(address);
-		managefooter.enterEmail(email);
-		managefooter.enterPhone(phone);
-		managefooter.clickUpdate();
-		managefooter.verifyAlert();
+		login.enterUserName(username).enterPassword(password);
+		homepage=login.clickSignIn();
+		managefooterpage=homepage.clickMoreinfo_footer().clickAction_footer().enterAddress(address).enterEmail(email).enterPhone(phone).clickAction_footer();
+	    boolean verifyAlert=managefooterpage.verifyAlert();
 		
 	
 	}
